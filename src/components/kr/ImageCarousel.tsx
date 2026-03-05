@@ -2,7 +2,6 @@
 'use client'; 
 import { useState, useEffect } from 'react';
 import Image from 'next/image'; 
-import React from 'react';
 
 interface ImageItem {
   src: string;
@@ -28,8 +27,6 @@ export default function ImageCarousel({ images = [] }: ImageCarouselProps) {
   if (!images || images.length === 0) {
     return null; // Don't render if no images are provided
   }
-
-  const currentImage = images[currentIndex];
 
   return (
     <div className="relative w-full max-w-4xl mx-auto h-96 overflow-hidden rounded-lg shadow-xl">
