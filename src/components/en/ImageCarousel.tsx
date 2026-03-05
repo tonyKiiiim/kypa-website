@@ -31,21 +31,24 @@ export default function ImageCarousel({ images = [] }: ImageCarouselProps) {
 
   const currentImage = images[currentIndex];
 
-  console.log('Current image index:', currentIndex);
-
   return (
     <div className="relative w-full max-w-4xl mx-auto h-96 overflow-hidden rounded-lg shadow-xl">
-      <Image
-        src={currentImage.src}
-        alt={currentImage.alt}
-        fill 
-        className="object-cover transition-opacity duration-1000 ease-in-out"
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        priority={currentIndex === 0} // Prioritize first image for faster loading
-      />
+      {images.map((image, index) => (
+        <Image
+          key={image.src}
+          src={image.src}
+          alt={image.alt}
+          fill
+          className={`object-cover transition-opacity duration-1000 ease-in-out absolute ${
+            index === currentIndex ? 'opacity-100' : 'opacity-0'
+          }`}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority={index === 0}
+        />
+      ))}
 
-      {/* Navigation Dots (optional) */}
-      <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+      {/* Navigation Dots */}
+      <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2 z-10">
         {images.map((_, index) => (
           <button
             key={index}

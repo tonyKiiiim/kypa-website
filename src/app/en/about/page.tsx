@@ -6,7 +6,7 @@ import React from 'react';
 export default function AboutPage() {
   return (
     <div className="container mx-auto py-12 px-4">
-      <h1 className="text-5xl font-bold text-center mb-10">About Us</h1>
+      <h1 className="text-3xl md:text-5xl font-bold text-center mb-10">About Us</h1>
 
       <section className="mb-12">
         <h2 className="text-3xl font-semibold mb-4">Our Mission</h2>

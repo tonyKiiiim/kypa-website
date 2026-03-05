@@ -58,28 +58,20 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Dropdown */}
-      {open && (
-        <div className="md:hidden bg-[#52b49b] text-white px-4 py-4 space-y-4 text-lg font-medium shadow-md">
-          <Link href={withLocale('/about')} className="block hover:text-yellow-100" onClick={() => setOpen(false)}>
-            소개
-          </Link>
-          <Link href={withLocale("/history")} className="block hover:text-yellow-100" onClick={() => setOpen(false)}>
-            연혁
-          </Link>
-          <Link href={withLocale("/news")} className="block hover:text-yellow-100" onClick={() => setOpen(false)}>
-            소식
-          </Link>
-          <Link href={withLocale("/join-us")} className="block hover:text-yellow-100" onClick={() => setOpen(false)}>
-            가입
-          </Link>
-          <Link href={withLocale("/contact")} className="block hover:text-yellow-100" onClick={() => setOpen(false)}>
-            연락처
-          </Link>
-
-          {/* Language Switcher in mobile menu */}
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="px-4 py-4 space-y-4 text-lg font-medium">
+          <Link href={withLocale('/about')} className="block hover:text-yellow-100" onClick={() => setOpen(false)}>소개</Link>
+          <Link href={withLocale("/history")} className="block hover:text-yellow-100" onClick={() => setOpen(false)}>연혁</Link>
+          <Link href={withLocale("/news")} className="block hover:text-yellow-100" onClick={() => setOpen(false)}>소식</Link>
+          <Link href={withLocale("/join-us")} className="block hover:text-yellow-100" onClick={() => setOpen(false)}>가입</Link>
+          <Link href={withLocale("/contact")} className="block hover:text-yellow-100" onClick={() => setOpen(false)}>연락처</Link>
           <LanguageSwitcher />
         </div>
-      )}
+      </div>
     </nav>
   );
 }

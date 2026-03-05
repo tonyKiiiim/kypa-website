@@ -5,7 +5,7 @@ import { submitContact } from "./action";
 export default function ContactPage() {
   return (
     <div className="container mx-auto py-12 px-4">
-      <h1 className="text-5xl font-bold text-center mb-10">Get in Touch with Us!</h1>
+      <h1 className="text-3xl md:text-5xl font-bold text-center mb-10">Get in Touch with Us!</h1>
 
       <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
         <div className="bg-white p-8 rounded-lg shadow-lg">

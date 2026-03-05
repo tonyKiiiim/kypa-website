@@ -8,7 +8,7 @@ export default function JoinUsPage() {
 
   return (
     <div className="container mx-auto py-12 px-4">
-      <h1 className="text-5xl font-bold text-center mb-10">대한유소년피클볼협회에 가입하세요!</h1>
+      <h1 className="text-3xl md:text-5xl font-bold text-center mb-10">대한유소년피클볼협회에 가입하세요!</h1>
 
       <section className="mb-12 text-center max-w-3xl mx-auto">
         <p className="text-lg text-gray-700 leading-relaxed mb-6">
