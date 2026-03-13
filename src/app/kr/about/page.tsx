@@ -32,7 +32,7 @@ export default function AboutPage() {
         </div>
         <div className="relative w-full h-80 rounded-lg overflow-hidden shadow-lg">
           <Image
-            src="/images/about-1.jpg" 
+            src="/images/about-1.jpg"
             alt="KYPA Story"
             fill
             className="object-cover"
@@ -47,7 +47,7 @@ export default function AboutPage() {
             대한 유소년 피클볼 협회(KYPA)는 2024년 6월 대한민국 안동에서 개최된 세계피클볼 대회에 참여해, 국내외로 피클볼을 알리는데 노력을 다 했습니다!
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mt-4">
-            대한민국 기획재정부는 2024년도 사회적으로 가장 큰 기여를 하고 있는 공익법인 16곳을 지정 발표했습니다. 대한 유소년 피클볼 협회(KYPA)는 영광스럽게도 이 16개 단체 중 한 단체로 인정되었음을 공지합니다. 
+            대한민국 기획재정부는 2024년도 사회적으로 가장 큰 기여를 하고 있는 공익법인 16곳을 지정 발표했습니다. 대한 유소년 피클볼 협회(KYPA)는 영광스럽게도 이 16개 단체 중 한 단체로 인정되었음을 공지합니다.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mt-4">
             대한 유소년 피클볼 협회(KYPA)의 피클볼 활성화를 위한 노력을 인정하여, 아시아 피클볼 연합은 KYPA를 연합의 공식 멤버로 인정할것을 예정고지했습니다.
@@ -103,8 +103,29 @@ export default function AboutPage() {
               <Link href={withLocale('/team/justin')} className="hover:underline text-black">Justin Nam</Link>
             </h3>
             <p className="text-[#40937e]">커뮤니티 자원봉사 디렉터</p>
-            <p className="text-gray-800 mt-4 text-base">Justin은 학생, 가족, 지역 단체 등 피클볼이라는 재미있고 빠르게 성장하는 스포츠에 함께하고자 하는 모든 사람들과의 연결 고리를 만들어갑니다.</p>
+            <p className="text-gray-800 mt-4 text-base">커뮤니티 자원봉사 디렉터 로서 Justin 은 스포츠와 봉사를 통해 청소년들이 성장할 수 있도록 돕는 일을 하고 있습니다. 지역사회 봉사 활동과 자원봉사 기회를 청소년들과 연결함으로써 리더쉽과 팀워크, 그리고 공동체에 대한 책임감을 기르고, 젊은 선수들이 코트 안팎에서 긍정적인 영향을 만들어 가도록 격려하고자 합니다.</p>
           </div>
+
+            {/* Member 6 */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <Image src="/images/member-6.jpg" alt="Brian" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
+                <h3 className="text-xl font-bold">
+                    <Link href={withLocale('#')} className="hover:underline text-black">Jihu Koo</Link>
+                </h3>
+                <p className="text-[#40937e]">아웃리치 & 네트워킹 디렉터</p>
+                <p className="text-gray-800 mt-4 text-base">아웃리치 및 네트워킹 디렉터로서 Jihu는 다양한 사람들을 연결하고, 스포츠에 관심 있는 누구나 피클볼 커뮤니티에 참여할 수 있는 기회를 제공하기 위해 끊임없이 노력하고 있습니다.</p>
+            </div>
+
+            {/* Member 7 */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <Image src="/images/member-7.jpg" alt="Brian" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
+                <h3 className="text-xl font-bold">
+                    <Link href={withLocale('#')} className="hover:underline text-black">Kevin Seojin Kim</Link>
+                </h3>
+                <p className="text-[#40937e]">운영지원 디렉터</p>
+                <p className="text-gray-800 mt-4 text-base">저는 KYPA의  프로그램들의 기획과 운영을 지원하고 신규 회원들의 등록 과정을  안내하며, 적응할 수 있도록 서포트 합니다. </p>
+            </div>
+
         </div>
       </section>
     </div>

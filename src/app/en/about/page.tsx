@@ -1,9 +1,16 @@
 // src/app/about/page.tsx
+'use client';
 import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function AboutPage() {
+
+    const pathname = usePathname();
+    const currentLocale = pathname?.split('/')[1] ?? 'en'; // fallback to 'en'
+    const withLocale = (path: string) => `/${currentLocale}${path}`;
+
   return (
     <div className="container mx-auto py-12 px-4">
       <h1 className="text-3xl md:text-5xl font-bold text-center mb-10">About Us</h1>
@@ -93,11 +100,33 @@ export default function AboutPage() {
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <Image src="/images/member-5.jpg" alt="Member Name 5" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
             <h3 className="text-xl font-bold">
-              <Link href="/team/justin" className="hover:underline text-black">Jusin Nam</Link>
+              <Link href="/team/justin" className="hover:underline text-black">Justin Nam</Link>
             </h3>
             <p className="text-[#40937e]">Community Volunteer Director</p>
-            <p className="text-gray-800 mt-4 text-base">Justin builds connections-between students, families, local organizations, and anyone who wants to be a part of this fun, fast-growing sport.</p>
+            <p className="text-gray-800 mt-4 text-base">As the Community Director, I am committed to helping young people grow through both sports and service. By connecting youth with community outreach and volunteer opportunities, I aim to foster leadership, teamwork, and a sense of responsibility-encouraging young athletes to make a positive impact both on and off the court.</p>
           </div>
+
+            {/* Member 6 */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <Image src="/images/member-6.jpg" alt="Brian" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
+                <h3 className="text-xl font-bold">
+                    <Link href={withLocale('#')} className="hover:underline text-black">Jihu Koo</Link>
+                </h3>
+                <p className="text-[#40937e]">Outreach & Networking Director</p>
+                <p className="text-gray-800 mt-4 text-base">As the Outreach & Networking Director, Jihu constantly strives to bridge diverse populations and provide opportunities for anyone interested in the sport to join the pickleball community.</p>
+            </div>
+
+            {/* Member 7 */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <Image src="/images/member-7.jpg" alt="Brian" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
+                <h3 className="text-xl font-bold">
+                    <Link href={withLocale('#')} className="hover:underline text-black">Kevin Seojin Kim</Link>
+                </h3>
+                <p className="text-[#40937e]">Operations & Support Director</p>
+                <p className="text-gray-800 mt-4 text-base">I design and oversee a variety of programs at KYPA to ensure everything runs smoothly. My primary focus is on welcoming new members—guiding them through the registration process and providing support for new ones.</p>
+            </div>
+
+
         </div>
       </section>
 

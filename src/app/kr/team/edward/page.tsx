@@ -35,7 +35,7 @@ export default function EdwardPage() {
         {/* Bio Text */}
         <div className="w-full md:w-2/3">
           <h1 className="text-5xl font-bold mb-2">Edward</h1>
-          <h2 className="text-2xl text-[#40937e] mb-6">Co-founder, Vice-President</h2>
+          <h2 className="text-2xl text-[#40937e] mb-6">공동창립자 및 부회장</h2>
           <p className="text-xl text-gray-700 leading-relaxed mb-4">
             Edward는 대한유소년피클볼협회(KYPA)의 공동 창립자이자 부회장으로, 피클볼을 널리 알리고 한국 전역의 지역 사회와의 유대를 강화하는 KYPA의 사명을 실현하는 데 핵심적인 역할을 하고 있습니다. 그는 사회적 영향에 대한 깊은 헌신을 바탕으로 커뮤니티 아웃리치 팀과 자원봉사 팀을 총괄하며, 지역 사회와의 교류를 활발히 이끌고 소외된 청소년들을 위한 다양한 자원봉사 활동을 통해 실질적인 지원을 제공합니다.
           </p>
@@ -58,7 +58,7 @@ export default function EdwardPage() {
             브라우저가 동영상 태그를 호환하지 않습니다.
           </video>
           <p className="text-md text-gray-700 leading-relaxed">
-            자원봉사의 가치를 전파하고, 소외된 청소년들이 픽클볼에 쉽게 접근할 수 있도록 기회를 넓혀가고 있습니다.
+            자원봉사의 가치를 전파하고, 소외된 청소년들이 피클볼에 쉽게 접근할 수 있도록 기회를 넓혀가고 있습니다.
           </p>
         </div>
       </section>

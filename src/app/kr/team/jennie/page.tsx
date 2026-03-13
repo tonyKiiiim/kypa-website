@@ -35,7 +35,7 @@ export default function JenniePage() {
         {/* Bio Text */}
         <div className="w-full md:w-2/3">
           <h1 className="text-5xl font-bold mb-2">Jennie</h1>
-          <h2 className="text-2xl text-[#40937e] mb-6">Community Outreach Director</h2>
+          <h2 className="text-2xl text-[#40937e] mb-6">커뮤니티 아웃리치 디렉터</h2>
           <p className="text-xl text-gray-700 leading-relaxed mb-4">
             Jennie는 KYPA의 지역 사회 참여 활동을 이끌며, 조직의 프로그램이 실질적이고 긍정적인 영향을 지속적으로 줄 수 있도록 의미 있는 연결을 만들어 갑니다.
           </p>
