@@ -29,15 +29,15 @@ export default function HomePage() {
           className="object-cover -z-10"
           priority
         />
-        <div className="hidden md:block z-10 bg-white p-3 rounded-lg mx-4 shadow-lg mt-50 md:p-6 md:mb-0">
-          <h1 className="text-black text-4xl md:text-6xl font-extrabold mb-4">
+        <div className="z-10 bg-white p-4 md:p-8 rounded-lg mx-4 shadow-lg max-w-2xl w-full">
+          <h1 className="text-black text-2xl sm:text-4xl md:text-5xl font-extrabold mb-3 md:mb-4">
             Korea Youth Pickleball Association
           </h1>
-          <p className="text-black text-xl md:text-2xl mb-8">
-            Empowering the youth through <strong>Pickleball</strong> !
+          <p className="text-black text-base sm:text-xl md:text-2xl mb-6 md:mb-8">
+            Empowering the youth through <strong>Pickleball</strong>!
           </p>
-          <Link href="/join-us" 
-          className="bg-[#52b49b] hover:bg-[#48a58d] text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300"
+          <Link href="/join-us"
+            className="bg-[#52b49b] hover:bg-[#48a58d] text-white font-bold py-2 px-6 md:py-3 md:px-8 rounded-full text-base md:text-lg transition duration-300"
           >
             Join Us Today!
           </Link>

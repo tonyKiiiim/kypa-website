@@ -7,7 +7,7 @@ import { submitApplication } from "./action";
 export default function JoinUsPage() {
   return (
     <div className="container mx-auto py-12 px-4">
-      <h1 className="text-5xl font-bold text-center mb-10">Join Our Community!</h1>
+      <h1 className="text-3xl md:text-5xl font-bold text-center mb-10">Join Our Community!</h1>
 
       <section className="mb-12 text-center max-w-3xl mx-auto">
         <p className="text-lg text-gray-700 leading-relaxed mb-6">

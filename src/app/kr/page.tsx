@@ -38,15 +38,15 @@ export default function HomePage() {
           className="object-cover -z-10"
           priority
         />
-        <div className="z-10 bg-white p-8 rounded-lg mx-4 shadow-lg mt-50">
-          <h1 className="text-black text-4xl md:text-6xl font-extrabold mb-4">
-            대한 유소년 피클 협회 
+        <div className="z-10 bg-white p-4 md:p-8 rounded-lg mx-4 shadow-lg max-w-2xl w-full">
+          <h1 className="text-black text-2xl sm:text-4xl md:text-5xl font-extrabold mb-3 md:mb-4">
+            대한 유소년 피클볼 협회
           </h1>
-          <p className="text-black text-xl md:text-2xl mb-8">
+          <p className="text-black text-base sm:text-xl md:text-2xl mb-6 md:mb-8">
             피클볼을 통해 어린이와 청소년을 더 건강하게!
           </p>
-          <Link href={withLocale('/join-us')} className="bg-[#52b49b] hover:bg-[#48a58d] text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
-            지금 가입하기 &#x2192;
+          <Link href={withLocale('/join-us')} className="bg-[#52b49b] hover:bg-[#48a58d] text-white font-bold py-2 px-6 md:py-3 md:px-8 rounded-full text-base md:text-lg transition duration-300">
+            지금 가입하기 →
           </Link>
         </div>
       </section>
@@ -76,7 +76,7 @@ export default function HomePage() {
             className="rounded-lg shadow-md w-full mb-12 object-cover object-top max-h-96"
           />
           <div className="mt-4">
-            <Link href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`}>
+            <Link href={withLocale('/news/paddles-without-borders-korea-nigeria-pickleball-festival')}>
               <h3 className="text-lg font-semibold text-black hover:underline cursor-pointer">
                 제1회 &quot;국경 없는 패들&quot;: 한국 x 나이지리아 피클볼 우정 축제
               </h3>
@@ -84,9 +84,9 @@ export default function HomePage() {
             <p className="text-sm text-gray-500">August 1, 2025</p>
             <p className="mt-2 text-sm text-gray-700 line-clamp-3">
               제1회 &quot;국경 없는 패들&quot; 페스티벌은 한국과 나이지리아가 함께한 피클볼을 통한 우정과 문화 교류의 축제였습니다.
-            </p>  
-            <Link 
-              href={`/news/paddles-without-borders-korea-nigeria-pickleball-festival`} 
+            </p>
+            <Link
+              href={withLocale('/news/paddles-without-borders-korea-nigeria-pickleball-festival')}
               className="inline-block mt-4 text-[#40937e] hover:underline text-sm"
             >
               Read More →
@@ -100,17 +100,17 @@ export default function HomePage() {
             className="rounded-lg shadow-md w-full mb-12 object-cover object-top max-h-96"
           />
           <div className="mt-4">
-            <Link href={`/news/fall-international-pickleball-festival`}>
+            <Link href={withLocale('/news/fall-international-pickleball-festival')}>
               <h3 className="text-lg font-semibold text-black hover:underline cursor-pointer">
                 FALL 선수 초청 피클볼 페스타
               </h3>
             </Link>
             <p className="text-sm text-gray-500">November 5, 2025</p>
             <p className="mt-2 text-sm text-gray-700 line-clamp-3">
-             11월 22~23일 서울·경기에서 국제 선수초청 피클볼페스타가 열리며, 참가 접수는 11월 2~17일 진행됩니다.
+              11월 22~23일 서울·경기에서 국제 선수초청 피클볼페스타가 열리며, 참가 접수는 11월 2~17일 진행됩니다.
             </p>
-            <Link 
-              href={`/news/fall-international-pickleball-festival`} 
+            <Link
+              href={withLocale('/news/fall-international-pickleball-festival')}
               className="inline-block mt-4 text-[#40937e] hover:underline text-sm"
             >
               Read More →
