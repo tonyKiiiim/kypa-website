@@ -26,7 +26,7 @@ export default function JustinPage() {
 
         {/* Bio Text */}
         <div className="w-full md:w-2/3">
-          <h1 className="text-5xl font-bold mb-2">Justin</h1>
+          <h1 className="text-5xl font-bold mb-2">Justin Nam</h1>
           <h2 className="text-2xl text-[#40937e] mb-6">Community Volunteer Director</h2>
           <p className="text-xl text-gray-700 leading-relaxed mb-4">
             Justin serves as the Community Volunteer Director at the Korea Youth Pickleball Association (KYPA), playing a key role in organizing and leading volunteer efforts that support youth engagement through sports. His dedication helps drive KYPA’s mission to create a positive social impact.

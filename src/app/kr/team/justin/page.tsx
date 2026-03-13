@@ -34,7 +34,7 @@ export default function JustinPage() {
 
         {/* Bio Text */}
         <div className="w-full md:w-2/3">
-          <h1 className="text-5xl font-bold mb-2">Justin</h1>
+          <h1 className="text-5xl font-bold mb-2">Justin Nam</h1>
           <h2 className="text-2xl text-[#40937e] mb-6">커뮤니티 자원봉사 디렉터</h2>
           <p className="text-xl text-gray-700 leading-relaxed mb-4">
             Justin은 한국청소년피클볼협회(KYPA)에서 커뮤니티 자원봉사 디렉터로 활동하며, 청소년 참여를 지원하는 다양한 자원봉사 활동을 기획하고 이끌고 있습니다. 그의 헌신은 KYPA가 스포츠를 통해 긍정적인 사회적 영향을 실현하는 데 큰 기여를 하고 있습니다.
