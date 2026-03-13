@@ -100,7 +100,7 @@ export default function AboutPage() {
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <Image src="/images/member-5.jpg" alt="Member Name 4" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
             <h3 className="text-xl font-bold">
-              <Link href={withLocale('/team/justin')} className="hover:underline text-black">Justin</Link>
+              <Link href={withLocale('/team/justin')} className="hover:underline text-black">Justin Nam</Link>
             </h3>
             <p className="text-[#40937e]">커뮤니티 자원봉사 디렉터</p>
             <p className="text-gray-800 mt-4 text-base">Justin은 학생, 가족, 지역 단체 등 피클볼이라는 재미있고 빠르게 성장하는 스포츠에 함께하고자 하는 모든 사람들과의 연결 고리를 만들어갑니다.</p>

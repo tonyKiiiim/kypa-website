@@ -93,7 +93,7 @@ export default function AboutPage() {
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <Image src="/images/member-5.jpg" alt="Member Name 5" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
             <h3 className="text-xl font-bold">
-              <Link href="/team/justin" className="hover:underline text-black">Jusin</Link>
+              <Link href="/team/justin" className="hover:underline text-black">Jusin Nam</Link>
             </h3>
             <p className="text-[#40937e]">Community Volunteer Director</p>
             <p className="text-gray-800 mt-4 text-base">Justin builds connections-between students, families, local organizations, and anyone who wants to be a part of this fun, fast-growing sport.</p>
