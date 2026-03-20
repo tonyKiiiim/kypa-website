@@ -110,7 +110,7 @@ export default function AboutPage() {
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
                 <Image src="/images/member-6.jpg" alt="Brian" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
                 <h3 className="text-xl font-bold">
-                    <Link href={withLocale('#')} className="hover:underline text-black">Jihu Koo</Link>
+                    <Link href={withLocale('/team/jihu')} className="hover:underline text-black">Jihu Koo</Link>
                 </h3>
                 <p className="text-[#40937e]">Outreach & Networking Director</p>
                 <p className="text-gray-800 mt-4 text-base">As the Outreach & Networking Director, Jihu constantly strives to bridge diverse populations and provide opportunities for anyone interested in the sport to join the pickleball community.</p>
@@ -120,7 +120,7 @@ export default function AboutPage() {
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
                 <Image src="/images/member-7.jpg" alt="Brian" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
                 <h3 className="text-xl font-bold">
-                    <Link href={withLocale('#')} className="hover:underline text-black">Kevin Seojin Kim</Link>
+                    <Link href={withLocale('/team/kevin')} className="hover:underline text-black">Kevin Seojin Kim</Link>
                 </h3>
                 <p className="text-[#40937e]">Operations & Support Director</p>
                 <p className="text-gray-800 mt-4 text-base">I design and oversee a variety of programs at KYPA to ensure everything runs smoothly. My primary focus is on welcoming new members—guiding them through the registration process and providing support for new ones.</p>

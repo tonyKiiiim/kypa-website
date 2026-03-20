@@ -110,7 +110,7 @@ export default function AboutPage() {
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
                 <Image src="/images/member-6.jpg" alt="Brian" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
                 <h3 className="text-xl font-bold">
-                    <Link href={withLocale('#')} className="hover:underline text-black">Jihu Koo</Link>
+                    <Link href={withLocale('/team/jihu')} className="hover:underline text-black">Jihu Koo</Link>
                 </h3>
                 <p className="text-[#40937e]">아웃리치 & 네트워킹 디렉터</p>
                 <p className="text-gray-800 mt-4 text-base">아웃리치 및 네트워킹 디렉터로서 Jihu는 다양한 사람들을 연결하고, 스포츠에 관심 있는 누구나 피클볼 커뮤니티에 참여할 수 있는 기회를 제공하기 위해 끊임없이 노력하고 있습니다.</p>
@@ -120,7 +120,7 @@ export default function AboutPage() {
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
                 <Image src="/images/member-7.jpg" alt="Brian" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
                 <h3 className="text-xl font-bold">
-                    <Link href={withLocale('#')} className="hover:underline text-black">Kevin Seojin Kim</Link>
+                    <Link href={withLocale('/team/kevin')} className="hover:underline text-black">Kevin Seojin Kim</Link>
                 </h3>
                 <p className="text-[#40937e]">운영지원 디렉터</p>
                 <p className="text-gray-800 mt-4 text-base">저는 KYPA의  프로그램들의 기획과 운영을 지원하고 신규 회원들의 등록 과정을  안내하며, 적응할 수 있도록 서포트 합니다. </p>
