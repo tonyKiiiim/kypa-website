@@ -10,6 +10,8 @@ export default function AboutPage() {
     const pathname = usePathname();
     const currentLocale = pathname?.split('/')[1] ?? 'en'; // fallback to 'en'
     const withLocale = (path: string) => `/${currentLocale}${path}`;
+    const memberImageWrapperClassName = 'mx-auto mb-4 flex h-[170px] w-[150px] items-start justify-center';
+    const memberImageClassName = 'h-[150px] w-[150px] rounded-full object-cover';
 
   return (
     <div className="container mx-auto py-12 px-4">
@@ -62,7 +64,9 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Member 1 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <Image src="/images/member-1.jpg" alt="Brian" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
+            <div className={memberImageWrapperClassName}>
+              <Image src="/images/member-1.jpg" alt="Brian" width={150} height={150} className={memberImageClassName} />
+            </div>
             <h3 className="text-xl font-bold">
               <Link href="/team/brian" className="hover:underline text-black">Brian</Link>
             </h3>
@@ -71,7 +75,9 @@ export default function AboutPage() {
           </div>
           {/* Member 2 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <Image src="/images/member-2.jpg" alt="Edward" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
+            <div className={memberImageWrapperClassName}>
+              <Image src="/images/member-2.jpg" alt="Edward" width={150} height={150} className={memberImageClassName} />
+            </div>
             <h3 className="text-xl font-bold">
               <Link href="/team/edward" className="hover:underline text-black">Edward</Link>
             </h3>
@@ -80,7 +86,9 @@ export default function AboutPage() {
           </div>
           {/* Member 3 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <Image src="/images/member-4.jpg" alt="Member Name 4" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
+            <div className={memberImageWrapperClassName}>
+              <Image src="/images/member-4.jpg" alt="Member Name 4" width={150} height={150} className={memberImageClassName} />
+            </div>
             <h3 className="text-xl font-bold">
               <Link href="/team/issac" className="hover:underline text-black">Isaac</Link>
             </h3>
@@ -89,7 +97,9 @@ export default function AboutPage() {
           </div>
           {/* Member 4 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <Image src="/images/member-3.jpg" alt="Member Name 3" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
+            <div className={memberImageWrapperClassName}>
+              <Image src="/images/member-3.jpg" alt="Member Name 3" width={150} height={150} className={memberImageClassName} />
+            </div>
             <h3 className="text-xl font-bold">
               <Link href="/team/jennie" className="hover:underline text-black">Jennie</Link>
             </h3>
@@ -98,7 +108,9 @@ export default function AboutPage() {
           </div>
           {/* Member 5 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <Image src="/images/member-5.jpg" alt="Member Name 5" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
+            <div className={memberImageWrapperClassName}>
+              <Image src="/images/member-5.jpg" alt="Member Name 5" width={150} height={150} className={memberImageClassName} />
+            </div>
             <h3 className="text-xl font-bold">
               <Link href="/team/justin" className="hover:underline text-black">Justin Nam</Link>
             </h3>
@@ -108,7 +120,9 @@ export default function AboutPage() {
 
             {/* Member 6 */}
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <Image src="/images/member-6.jpg" alt="Brian" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
+                <div className={memberImageWrapperClassName}>
+                  <Image src="/images/member-6.jpg" alt="Brian" width={150} height={150} className={memberImageClassName} />
+                </div>
                 <h3 className="text-xl font-bold">
                     <Link href={withLocale('/team/jihu')} className="hover:underline text-black">Jihu Koo</Link>
                 </h3>
@@ -118,7 +132,9 @@ export default function AboutPage() {
 
             {/* Member 7 */}
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
-                <Image src="/images/member-7.jpg" alt="Brian" width={120} height={120} className="rounded-full mx-auto mb-4 object-cover" />
+                <div className={memberImageWrapperClassName}>
+                  <Image src="/images/member-7.jpg" alt="Brian" width={150} height={150} className={memberImageClassName} />
+                </div>
                 <h3 className="text-xl font-bold">
                     <Link href={withLocale('/team/kevin')} className="hover:underline text-black">Kevin Seojin Kim</Link>
                 </h3>
