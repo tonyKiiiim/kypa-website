@@ -15,7 +15,7 @@ export default function JustinPage() {
         <div className="w-full md:w-1/3">
           <div className="relative w-full aspect-[3/4] md:h-[600px] shadow-xl overflow-hidden rounded-lg">
             <Image
-              src="/images/member-7.jpg"
+              src="/images/member-7.jpeg"
               alt="Kevin"
               fill
               className="object-cover"

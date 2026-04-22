@@ -133,7 +133,7 @@ export default function AboutPage() {
             {/* Member 7 */}
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
                 <div className={memberImageWrapperClassName}>
-                  <Image src="/images/member-7.jpg" alt="Brian" width={150} height={150} className={memberImageClassName} />
+                  <Image src="/images/member-7.jpeg" alt="Kevin" width={150} height={150} className={memberImageClassName} />
                 </div>
                 <h3 className="text-xl font-bold">
                     <Link href={withLocale('/team/kevin')} className="hover:underline text-black">Kevin Seojin Kim</Link>
