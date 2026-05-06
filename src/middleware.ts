@@ -6,6 +6,22 @@ import Negotiator from "negotiator";
 
 const locales = ["en", "kr"];
 const defaultLocale = "en";
+const matcherLocales = ["en", "ko"];
+const localePathMap: Record<string, string> = {
+  en: "en",
+  ko: "kr",
+};
+
+function isValidLanguageTag(language: string): boolean {
+  if (language === "*") return false;
+
+  try {
+    Intl.getCanonicalLocales(language);
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 function getLocale(request: NextRequest): string {
   const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;
@@ -14,8 +30,18 @@ function getLocale(request: NextRequest): string {
   const negotiatorHeaders: Record<string, string> = {};
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
 
-  const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
-  return match(languages, locales, defaultLocale);
+  const languages = new Negotiator({ headers: negotiatorHeaders })
+    .languages()
+    .filter(isValidLanguageTag);
+
+  if (languages.length === 0) return defaultLocale;
+
+  try {
+    const matchedLocale = match(languages, matcherLocales, defaultLocale);
+    return localePathMap[matchedLocale] ?? defaultLocale;
+  } catch {
+    return defaultLocale;
+  }
 }
 
 export function middleware(request: NextRequest) {
